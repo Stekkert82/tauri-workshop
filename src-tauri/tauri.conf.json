@@ -21,6 +21,14 @@
       "csp": null
     }
   },
+  "plugins": {
+    "updater": {
+      "endpoints": [
+        "https://cdn.crabnebula.app/update/triple-rick/tauri-workshop-app/{{target}}-{{arch}}/{{current_version}}"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDlCNTI4QUREQzY4MkREQwpSV1RjTFdqY3JTaTFDZkZFU29iWG9NWUNlY0tIU2gvOGVSbDNWWm9kbU1GUDdpbCt1NlRHS0xPWgo="
+    }
+  },
   "bundle": {
     "macOS": {
       "signingIdentity": "-"

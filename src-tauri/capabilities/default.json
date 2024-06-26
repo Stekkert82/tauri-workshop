@@ -20,6 +20,8 @@
     "os:default",
     "os:allow-platform",
     "os:allow-locale",
-    "notification:default"
+    "notification:default",
+    "updater:default",
+    "dialog:default"
   ]
 }

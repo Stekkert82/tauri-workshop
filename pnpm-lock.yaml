@@ -23,6 +23,9 @@ importers:
       '@tauri-apps/plugin-shell':
         specifier: '>=2.0.0-beta.0'
         version: 2.0.0-beta.6
+      '@tauri-apps/plugin-updater':
+        specifier: 2.0.0-beta.5
+        version: 2.0.0-beta.5
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -477,6 +480,9 @@ packages:
 
   '@tauri-apps/plugin-shell@2.0.0-beta.6':
     resolution: {integrity: sha512-g3nM9cQQGl7Iv4MvyFuco/aPTiwOI/MixcoKso3VQIg5Aqd64NqR0r+GfsB0qx52txItqzSXwmeaj1eZjO9Q6Q==}
+
+  '@tauri-apps/plugin-updater@2.0.0-beta.5':
+    resolution: {integrity: sha512-h8uNFQDtXaZPFyQcNAB5SxiSIvPbYRlM1fXf/lCcW8bAaMTanyszbHvR2vAYtVa/wIzKAOYriC/MpsJaKLjyhg==}
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -1133,6 +1139,10 @@ snapshots:
       '@tauri-apps/api': 2.0.0-beta.13
 
   '@tauri-apps/plugin-shell@2.0.0-beta.6':
+    dependencies:
+      '@tauri-apps/api': 2.0.0-beta.13
+
+  '@tauri-apps/plugin-updater@2.0.0-beta.5':
     dependencies:
       '@tauri-apps/api': 2.0.0-beta.13
 

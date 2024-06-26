@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  CN_APP_SLUG: ${{ github.event.inputs.app-slug || 'quantum' }}
+  CN_APP_SLUG: ${{ github.event.inputs.app-slug || 'tauri-workshop-app' }}
 
 jobs:
   draft:

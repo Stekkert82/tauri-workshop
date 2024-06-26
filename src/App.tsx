@@ -8,6 +8,7 @@ import {
   requestPermission,
   sendNotification,
 } from "@tauri-apps/plugin-notification";
+import { checkForAppUpdates } from "./updater";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -18,6 +19,7 @@ function App() {
   }>();
 
   const init = async () => {
+    await checkForAppUpdates();
     const plat = await platform();
     const loc = await locale();
 
